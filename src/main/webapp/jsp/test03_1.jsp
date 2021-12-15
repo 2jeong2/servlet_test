@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
@@ -29,9 +30,10 @@
 	
 	
 %> 
-<h1>bmi측정 결과</h1>
-<div class="display-4">당신은<span class=""></span></div>
+<h3>bmi 측정 결과</h3>
+<div class="display-4"><span class="text-info">당신은</span></div>
 <b><%=bmi %></b>
+
 
 </body>
 </html>

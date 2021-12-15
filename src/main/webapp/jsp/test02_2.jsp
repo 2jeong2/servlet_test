@@ -24,12 +24,12 @@
 %>
 
 <% 
-	String formatString = 
+	String formatString = null;
 	if(what.equals("date")) {
-	formatString = dateString;
+		formatString = dateString;
 	}
 	else if(what.equals("time")){
-		
+		formatString = timeString;
 	}
 
 
@@ -44,9 +44,9 @@
 
 --%>
 
-	<h1>오늘 날짜 <%=dateString %></h1>
+	<h3>오늘 날짜 <%=dateString %></h3>
 
-	<h1>현재 시간 <%=timeString %></h1>
+	<h3>현재 시간 <%=timeString %></h3>
 
 
 
