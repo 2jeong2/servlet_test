@@ -80,7 +80,8 @@ list.add(map);
 </div>
 -->
 <%
-String id = request.getParameter("id");
+String idString = request.getParameter("id");
+Integer id = Integer.parseInt(idString);
 
 for(int i=0; i<list.size(); i++){
 	Map<String,Object> item = list.get(i);
