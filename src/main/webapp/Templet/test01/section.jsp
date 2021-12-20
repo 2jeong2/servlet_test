@@ -1,7 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
      <%@ page import = "java.util.*" %>
-<%@ inculde file = "data.jsp" %>
+ <body>
+<%@ include file = "data.jsp" %>
 <%
 String category = request.getParameter("category");
 %>
@@ -32,3 +33,4 @@ String category = request.getParameter("category");
 			</table>
 		</section>
 
+</body>
