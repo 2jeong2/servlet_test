@@ -32,10 +32,10 @@ public class DatabaseTest01 extends HttpServlet{
 				
 				out.print("매물 주소 : " + resultSet.getString("address"));
 				out.print(" , 면적 : " + resultSet.getString("area"));
-				out.println(" , 타입 : " + resultSet.getString("type") );
+				out.println(" , 타입 : " + resultSet.getString("type"));
 				
-			String insertQuery = "INSERT INTO `real_estate`\r\n";
 			String query = mysqlservice.select(selectQuery);
+			String insertQuery = "INSERT INTO `real_estate`\r\n"
 						
 			+"(`realtorId`,`adrress`,`area`,`type`,`price`,`rentPrice`,`createdAt`,`updatedAt`)"
 			+"VALUES\r\n"
